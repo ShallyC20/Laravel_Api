@@ -129,7 +129,7 @@ export default {
 
     // cancelEdicion permite cancelar la edición y volver al modo "crear"
     cancelarEdicion() {
-      this.resetForm(); // Limpia el formulario
+      this.limpiarForm(); // Limpia el formulario
     },
 
     // limpiarForm limpia todos los campos del formulario y reinicia el modo "crear"

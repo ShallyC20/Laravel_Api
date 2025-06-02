@@ -141,48 +141,134 @@ export default {
 </script>
 
 <style>
-.botonRegistrar {
-  border-radius: 20px;
-  padding: 10px 20px 10px 20px;
-  border: none;
-  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
-  background: #dc3333;
-  color: white;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
 }
 
 .container {
-  max-width: 1500px;
-  margin: auto;
-  font-family: sans-serif;
-  background-color: #601515;
-  border-radius: 20px;
-  padding: 50px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fc4444b9;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
 form {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 input {
-  display: block;
-  width: 100%;
-  margin: 8px 0;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #dc3545;
 }
 
 button {
-  margin: 4px 4px 10px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
+.botonRegistrar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.botonRegistrar:hover {
+  background-color: #c82333;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* MENSAJE DE ERROR */
+p {
+  margin: 0;
+}
+
+p[style*="color: red"] {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* TABLA DE USUARIOS */
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.95rem;
 }
 
 th,
 td {
-  padding: 8px;
-  border: 1px solid #ccc;
+  padding: 12px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
+
+th {
+  background-color: #ffffff7e;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #d50c0c;
+}
+
+td button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+td button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+td button:first-child:hover {
+  background-color: #0056b3;
+}
+
+td button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+td button:last-child:hover {
+  background-color: #c82333;
+}
+
 </style>

@@ -142,7 +142,7 @@ export default {
   padding: 10px 20px 10px 20px;
   border: none;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
-  background: #dc7633;
+  background: #dc3333;
   color: white;
 }
 
@@ -150,7 +150,7 @@ export default {
   max-width: 1500px;
   margin: auto;
   font-family: sans-serif;
-  background-color: #154360;
+  background-color: #601515;
   border-radius: 20px;
   padding: 50px;
 }

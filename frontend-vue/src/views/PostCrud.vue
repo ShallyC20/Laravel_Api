@@ -13,7 +13,7 @@
         {{ passwordError }}
       </p>
       <button class="botonRegistrar" type="submit">{{ form.id ? 'Actualizar' : 'Registrar' }}</button>
-      <button v-if="form.id" type="button" @click="cancelEdit">Cancelar edición</button>
+      <button v-if="form.id" type="button" @click="cancelarEdicion">Cancelar edición</button>
     </form>
 
     <!-- TABLA DE USUARIOS -->

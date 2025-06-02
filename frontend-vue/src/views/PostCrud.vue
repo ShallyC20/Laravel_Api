@@ -69,8 +69,12 @@ export default {
 
     // fetchUsers obtiene los usuarios desde la API (GET)
     async obtenerUsuarios() {
-      const res = await axios.get('http://localhost:8000/api/users'); // Llamada HTTP a la API
-      this.users = res.data; // Guarda la respuesta en la variable "users"
+      try {
+        const res = await axios.get('http://localhost:8000/api/users');// Llamada HTTP a la API
+        this.users = res.data;// Guarda la respuesta en la variable "users"
+      } catch (error) {
+        console.error('Error al obtener usuarios:', error);
+      }
     },
 
     validarPassword() {
